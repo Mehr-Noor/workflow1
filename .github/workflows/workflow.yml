@@ -3,11 +3,6 @@ on: push
 jobs: 
   windows: 
     runs-on: windows-latest
-    steps:
-     -run: date
-
   depends:
     needs: [windows]
     runs-on: windows-latest
-    steps:
-     -run: date
