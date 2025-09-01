@@ -2,12 +2,12 @@ name: Dependent
 on: push
 jobs: 
   windows: 
-    run-os: windows-latest
+    runs-on: windows-latest
     steps:
      -run: date
 
   depends:
     needs: [windows]
-    runts-os: windows-latest
+    runs-on: windows-latest
     steps:
-     -run:date
+     -run: date
